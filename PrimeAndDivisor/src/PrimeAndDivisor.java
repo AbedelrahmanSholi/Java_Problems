@@ -85,7 +85,7 @@ public class PrimeAndDivisor {
 	static boolean isPrime(int number) {
 		if (number <= 1)
 			throw new IllegalArgumentException();
-		for (int counter = 2; counter < number / 2; counter++) {
+		for (int counter = 2; counter <= number/2; counter++) {
 			if (number % counter == 0)
 				return false;
 		}
